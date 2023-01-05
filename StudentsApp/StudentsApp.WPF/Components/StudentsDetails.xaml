@@ -1,0 +1,81 @@
+﻿ <UserControl x:Class="StudentsApp.WPF.Components.StudentsDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudentsApp.WPF.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+     <!-- Details of the students -->
+     <Grid>
+         
+         <!--Create a border for the view-->
+        <Border 
+            CornerRadius="20"
+            Padding="20"
+            BorderBrush="{StaticResource BorderPrimary}" 
+            BorderThickness="1">
+
+            <Grid Grid.IsSharedSizeScope="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--The Name of the student-->
+                <TextBlock 
+                    Grid.Row="0"
+                    FontSize="16" 
+                    Text="Sean Brunton" />
+
+                <!--Other details of the student-->
+                <Grid Grid.Row="1" Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Column1"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Margin="0 0 20 0" FontWeight="Bold" Text="Linear Algebra: "/>
+                    <TextBlock Grid.Column="1" Text="40"/>
+                </Grid>
+
+                <Grid Grid.Row="2" Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Column1"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Margin="0 0 20 0" FontWeight="Bold" Text="Data structures and algorithms:"/>
+                    <TextBlock Grid.Column="1" Text="5"/>
+                </Grid>
+
+                <!--Other details of the student-->
+                <Grid Grid.Row="3" Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Column1"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Margin="0 0 20 0" FontWeight="Bold" Text="Public speaking and language: "/>
+                    <TextBlock Grid.Column="1" Text="40"/>
+                </Grid>
+
+                <Grid Grid.Row="4" Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Column1"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Margin="0 0 20 0" FontWeight="Bold" Text="AI and machine learning:"/>
+                    <TextBlock Grid.Column="1" Text="5"/>
+                </Grid>
+
+            </Grid>
+            
+            
+        </Border> 
+    </Grid>
+</UserControl>

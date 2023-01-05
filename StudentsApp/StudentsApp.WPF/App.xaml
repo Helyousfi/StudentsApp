@@ -1,0 +1,30 @@
+﻿<!--App.xaml is a file that contains the application-level resources, such as styles, brushes, 
+    and other resources that can be used by the entire application. 
+    It is typically used to define a common look and feel for the application, and to centralize resource management.-->
+<Application x:Class="StudentsApp.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:StudentsApp.WPF">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            
+            <SolidColorBrush 
+                x:Key="BorderPrimary" 
+                Color="#1c1c1c"/>
+
+            <SolidColorBrush 
+                x:Key="BorderSecondary"
+                Color="#F00"/>
+
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="#547AFF"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Cursor" Value="Hand"/>
+            </Style>
+            
+        </ResourceDictionary>
+    
+    </Application.Resources>
+</Application>

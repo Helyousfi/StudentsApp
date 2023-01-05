@@ -1,0 +1,20 @@
+﻿StudentsApp.WPF
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\hamza\Desktop\C# Full Course\Projects\StudentsApp\StudentsApp.WPF\obj\Debug\net5.0-windows\
+StudentsApp.WPF
+none
+false
+TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+C:\Users\hamza\Desktop\C# Full Course\Projects\StudentsApp\StudentsApp.WPF\App.xaml
+41700238167
+
+13929579525
+194-810003766
+Components\StudentsDetails.xaml;Components\StudentsListing.xaml;MainWindow.xaml;Views\StudentsInfo.xaml;
+
+True
+
